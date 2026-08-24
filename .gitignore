@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+fashion-hub/
+server.log
+*.command
+中国潮牌清单.md
+韩国ins穿搭博主清单.md
+韩国潮牌清单.md
+中国国潮品牌清单.md
+*清单*.md

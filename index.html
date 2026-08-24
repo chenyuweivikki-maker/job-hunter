@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TailorCV · JD 简历定制工坊</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+ <aside id="sidebar">
+ <div class="brand">
+ <div class="brand-mark">TC</div>
+ <div class="brand-text">
+ <div class="brand-name">TailorCV</div>
+ <div class="brand-sub">JD 简历定制工坊</div>
+ </div>
+ </div>
+ <nav id="nav">
+ <button class="nav-item active" data-view="profile"><span class="nav-ico">藏</span><span>资料库</span><span class="nav-hint">工作经历</span></button>
+ <button class="nav-item" data-view="jd"><span class="nav-ico">职</span><span>JD 输入</span><span class="nav-hint">岗位分析</span></button>
+ <button class="nav-item" data-view="generate"><span class="nav-ico">稿</span><span>生成简历</span><span class="nav-hint">适配参数</span></button>
+ <button class="nav-item" data-view="preview"><span class="nav-ico">览</span><span>简历预览</span><span class="nav-hint">简介·宽排版</span></button>
+ </nav>
+ <div class="side-foot">
+ <button id="btnSettings" class="ghost-btn full"> LLM 设置</button>
+ <div class="side-note">本地智能模式无需联网；接入 LLM 可深度改写，密钥仅存于本浏览器。</div>
+ </div>
+ </aside>
+
+ <main id="main">
+ <header id="topbar">
+ <div id="topbar-title">
+ <h1 id="viewTitle">资料库</h1>
+ <p id="viewSub">一次录入全部工作经历，之后任意 JD 一键复用</p>
+ </div>
+ <div id="topbar-actions"></div>
+ </header>
+
+ <section id="view-profile" class="view active"></section>
+ <section id="view-jd" class="view"></section>
+ <section id="view-generate" class="view"></section>
+ <section id="view-preview" class="view"></section>
+ </main>
+</div>
+
+<div id="toast-root"></div>
+<div id="modal-root"></div>
+
+<script src="js/data.js"></script>
+<script src="js/keywords.js"></script>
+<script src="js/engine-local.js"></script>
+<script src="js/engine-llm.js"></script>
+<script src="js/preview.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
